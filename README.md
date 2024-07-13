@@ -77,8 +77,8 @@ python3 app.py #Linux or Mac
 <h3 align="center">Step #3 Adjust the window to view all columns.</h3>
     <p align="center">
     <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="./images/photo_03.png">
-        <img src="./images/photo_03.png">
+        <source media="(prefers-color-scheme: dark)" srcset="./images/photo_04.png">
+        <img src="./images/photo_04.png">
     </picture>
     </p>
 </h3>
