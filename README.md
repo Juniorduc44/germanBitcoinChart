@@ -1,5 +1,23 @@
+<small>python version 3.10.12+</small>
+
+
+<h3 align="center">  hashVarGui.py</h3>
+<h3 align="center"> Using...</h3>
+    <p align="center">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./images/CustomTkinter_logo_dark.png">
+        <img src="./images/CustomTkinter_logo_light.png">
+    </picture>
+    </p>
+<div align="center">
+--> [https://github.com/TomSchimansky/CustomTkinter]<--
+
 # germanBitcoinChart
 just a chart made with customtkinter with the help of AI so i can look at a csv file in an convenient manner.
+</div>
+
+
+
 
 
 
