@@ -82,3 +82,6 @@ python3 app.py #Linux or Mac
     </picture>
     </p>
 </h3>
+
+## Resources
+- https://platform.arkhamintelligence.com/explorer/entity/germany
