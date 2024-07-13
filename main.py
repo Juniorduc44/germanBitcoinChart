@@ -2,6 +2,9 @@
 import pandas as pd
 import customtkinter as ctk
 from tkinter import ttk, IntVar, messagebox
+import locale
+# Set locale for USD formatting
+locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
 # Load the CSV file
 file_path = './arkham_txns.csv'
@@ -27,6 +30,13 @@ text_color = "#d9d9d9"
 # List to keep track of the order of selected columns
 selected_columns_order = []
 
+# Function to format USD values
+def format_usd(value):
+    try:
+        return locale.currency(float(value), grouping=True)
+    except ValueError:
+        return value
+
 # Function to format unitValue to 8 decimal places
 def format_unit_value(value):
     try:
@@ -46,9 +56,13 @@ def populate_treeview():
         for col, value in zip(selected_columns_order, row):
             if col == "unitValue":
                 formatted_row.append(format_unit_value(value))
+            elif col == "historicalUSD":
+                formatted_row.append(format_usd(value))
+                
             else:
                 formatted_row.append(value)
         tree.insert("", "end", values=formatted_row)
+    
 
 # Create a frame for the treeview
 frame = ctk.CTkFrame(app, fg_color=frame_color)
