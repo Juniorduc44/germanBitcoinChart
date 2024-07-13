@@ -27,6 +27,13 @@ text_color = "#d9d9d9"
 # List to keep track of the order of selected columns
 selected_columns_order = []
 
+# Function to format unitValue to 8 decimal places
+def format_unit_value(value):
+    try:
+        return f"{float(value):.8f}"
+    except ValueError:
+        return value
+
 # Function to populate the treeview with selected columns
 def populate_treeview():
     tree.delete(*tree.get_children())
@@ -35,7 +42,13 @@ def populate_treeview():
         tree.heading(str(col), text=str(col), anchor='center')
         tree.column(str(col), width=120, anchor='center')
     for _, row in data[selected_columns_order].iterrows():
-        tree.insert("", "end", values=list(row))
+        formatted_row = []
+        for col, value in zip(selected_columns_order, row):
+            if col == "unitValue":
+                formatted_row.append(format_unit_value(value))
+            else:
+                formatted_row.append(value)
+        tree.insert("", "end", values=formatted_row)
 
 # Create a frame for the treeview
 frame = ctk.CTkFrame(app, fg_color=frame_color)
