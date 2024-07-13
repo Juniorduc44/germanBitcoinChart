@@ -63,3 +63,13 @@ python3 app.py #Linux or Mac
         <img src="./images/photo_01.png">
     </picture>
     </p>
+</h3>
+
+<h3 align="center">Step #2 Press "OK" to confirm each column of data in order.</h3>
+    <p align="center">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./images/photo_02.png">
+        <img src="./images/photo_02.png">
+    </picture>
+    </p>
+</h3>
