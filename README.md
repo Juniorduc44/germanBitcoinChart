@@ -52,3 +52,14 @@ python main.py #Windows environment
 ```py
 python3 app.py #Linux or Mac
 ```
+
+
+
+
+<h3 align="center">Step #1 Choose data you want to see</h3>
+    <p align="center">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./images/photo_01.png">
+        <img src="./images/photo_01.png">
+    </picture>
+    </p>
