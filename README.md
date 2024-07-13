@@ -1,7 +1,7 @@
 <small>python version 3.10.12+</small>
 
 
-<h3 align="center">  hashVarGui.py</h3>
+<h3 align="center">  germanBitcoinChart</h3>
 <h3 align="center"> Using...</h3>
     <p align="center">
     <picture>
@@ -12,8 +12,8 @@
 <div align="center">
 --> [https://github.com/TomSchimansky/CustomTkinter]<--
 
-# germanBitcoinChart
-just a chart made with customtkinter with the help of AI so i can look at a csv file in an convenient manner.
+##
+Just a chart made with customtkinter with the help of AI so i can look at a csv file in an convenient manner.
 </div>
 
 
